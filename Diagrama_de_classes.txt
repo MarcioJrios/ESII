@@ -1,0 +1,9 @@
+Diagrama de Classes
+
+Uma classe é uma abstração de um objeto da vida real que agrupa dados(atributos) e procedimentos(operações) relacionados ao seu contexto.
+Um diagrama de classes é uma representação da estrutura e relações das classes que servem de modelo para os objetos.
+
+Associações
+
+Ao modelar um sistema, certos objetos estarão relacionados entre si e esses relacionamentos precisam ser moderados
+Associação bidirecional: Uma associação é uma ligação entre duas classes. Nas extremidades você pode colocar a multiplicidade.
