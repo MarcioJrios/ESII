@@ -1,0 +1,33 @@
+Diagrama de sequência
+
+O diagrama de sequencia representa o fluxo e a ordem das mensagens trocadas entre os objetos colaboram em algum comportamento ao longo do tempo.
+* Um software nada mais é do que um conjunto de funcionalidades, que possuem uma relação lógica entre elas e interagem entre si através de troca de mensagens(mensagens estas que são representadas no diagrama de sequencia).
+Atores: são entidades externas que interagem com o sistema.
+objetos: representam as instancias de uma classe.
+Linhas de vida: é a instância de um objeto, de onde partem e/ou chegam chamadas.
+Fragmentos: são "caixas no diagrama que utilizamos para tratar estruturas condicionais(if/else), loops...
+mensagens: informações trocadas entre os objetos.
+
+ Agendar Consulta:
+     _
+    |_|
+     |
+    /|\
+   / | \
+     |
+    / \
+   /   \
+                            AgendaConsulta             AguardaControle                   Paciente
+  Secretária                      '                            '                             '
+     '                            _                            '                             '
+    |'| Informa nome do paciente |'|  Busca Paciente (nome)   |'|        get(nome)          |'|
+    |'|_________________________>|'|_________________________>|'|__________________________>|'|
+    |'|                          |_|<---Exibe informações-----|'|<------PacienteExiste------|'|
+    |'|                           '                            '                             ' 
+    |'|                           '                            '                             '
+    |'|  Informa data e hora     |'|    addConsulta(data_hora)|'|     addConsulta()          '     __________________
+    |'|_________________________>|'|_________________________>|'|____________________________'___>|  Conserta        |
+    |'|                          |'|<-----ConsultaMarcada-----|'|<----ConsultaOK-------------'----|  Consulta        |
+    |'|                          |'|                                                         '
+    |'|                          |'|                                                         '
+

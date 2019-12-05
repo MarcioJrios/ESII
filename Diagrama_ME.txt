@@ -1,0 +1,34 @@
+Diagrama de máquina de estados
+
+    É um diagrama comportamental que procura acompanhar as mudanças sofridas nos estados de uma instância de uma determinada classe.
+    Procurar demonstrar o comportamento de um elemento por meio de transições de estado. O elemento modelado muitas vezes é uma instância 
+de uma classe, no entanto, pode-se usar esse diagrama para modelar o comportamento de um caso de uso, o comportamento de um dado durante uma 
+transação ou mesmo o comportamento de um sistema completo.
+
+Estado
+
+    Um estado representa a situação em que um objeto se encontra em determinado momento durante o período que este participa de um processo. 
+Um objeto pode passar por diversos estados dentro de um processo.
+    Um estado pode demonstrar:
+->A espera pela ocorrência de um evento.
+->A reação a um estímulo.
+->A execução de uma atividade.
+->A satisfação de alguma condição.
+
+Ex cadastro de pessoas:
+        ---------------------                                ------------------------------
+O-----> |Consultando pessoas|------------Relation----------->|Apresentando dados da pessoa|
+        |     conCPF()      |               |                |                            |
+        ---------------------               |                ------------------------------
+                                            |                              |
+                                            |                              |
+                                0--------Relation--------------------------|
+                                            |
+                                            |
+                                            |
+                                            |
+                                            v
+                                   ------------------------                      -----------------
+                                   |Alterando dados pessoa|--------------------->|Recebendo dados|---------0
+                                   ------------------------                      |     WCPF()    |
+                                                                                 -----------------

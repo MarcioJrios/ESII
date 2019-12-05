@@ -1,0 +1,24 @@
+Diagrama de Tempo
+
+    O diagrama de tempo foca nas mudanças de estado de um objeto ao longo do tempo.
+    Em um sistema por exemplo de concurso Público há uma sequência lógica de etapas que precisam ser executadas. Não se pode 
+"aplicar prova de seleção" sem antes "elaboras edital".
+    Em um sistema bancário não se pode "sacar dinheiro"  se não tem saldo.
+    Em um sistema de controle de estoque não se pode "vender algo" se o estoque acabou.
+    Tipicamente os diagramas de tempo demonstram mudanças no estado de um objeto de um objeto no tempo em resposta.
+a eventos externos.
+
+                 |<-{05/01}...{31/01}    ->|<-  {01/02}...{31/3}   ->|<-   {10/04}          ->|<-  {12/04}...{30/04} ->|<-       {30/05}
+elaborando edital --------------------------
+                                           |
+                                           |
+Abrindo Seções                             --------------------------
+                                                                     |
+                                                                     |
+Aplicando Provas de seleção                                          --------------------------
+                                                                                              |
+                                                                                              |
+Avaliando Provas                                                                              --------------------------
+                                                                                                                       |
+                                                                                                                       |
+Publicando Resultados                                                                                                  --------------------------
